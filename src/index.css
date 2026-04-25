@@ -20,7 +20,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   /* background: pink; */
 }
 .header {
@@ -37,6 +37,9 @@ body {
 h1 {
   font-size: 3.5em;
   color: oklch(70.2% 0.183 293.541);
+}
+.first {
+  margin-top: 20px;
 }
 h2 {
   font-size: 2.5em;
@@ -85,23 +88,36 @@ h2 {
 .flex-space-around {
   justify-content: space-around;
 }
+
 .main a p {
   padding: 10px 20px;
   background: oklch(86.9% 0.022 252.894);
   border-radius: 5px;
   cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.main a p:hover {
+  transform: translateY(-3px);
 }
 .btns {
   margin-top: 30px;
   display: flex;
   gap: 30px;
 }
+.two {
+  display: flex;
+  flex-direction: column;
+  /* background: pink; */
+}
 .credit {
   /* position: absolute;
   bottom: 0; */
   color: oklch(70.2% 0.183 293.541);
+  display: flex;
+  justify-content: flex-end;
 }
-.second {
+.two {
   margin-bottom: 20px;
   margin-right: 20px;
   display: flex;
