@@ -16,7 +16,7 @@ const Flexbox = () => {
           <Header onReset={handleReset} />
           <div className="first">
             <h2 className=" flex justify-center items-center text-slate-700">
-              just-content
+              justify-content
             </h2>
             <div className="main">
               <div className="box-parent">
