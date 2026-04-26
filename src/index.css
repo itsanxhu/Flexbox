@@ -1,4 +1,10 @@
 @import "tailwindcss";
+@theme {
+  --color-page: #f8fdfd;
+  --color-line1: #2956a3;
+  --color-line2: #c9e3ff;
+  --color-line3: #ee4b98;
+}
 
 * {
   margin: 0;
@@ -21,7 +27,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background: pink; */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header {
   margin-top: 10px;
@@ -35,14 +45,14 @@ body {
   align-items: center;
 }
 h1 {
-  font-size: 3.5em;
-  color: oklch(70.2% 0.183 293.541);
+  font-size: 3em;
 }
 .first {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 h2 {
   font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .box-parent {
@@ -50,54 +60,45 @@ h2 {
   border: 1px solid black;
 }
 .box {
-  height: 25rem;
-  width: 60rem;
+  height: calc(25rem / 1.3);
+  width: calc(60rem);
   border: 1px dashed #4b4a4a;
   display: flex;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
   gap: 10px;
+
+  transition: all 0.4s ease;
 }
-.line1 {
+.jline1,
+.jline2,
+.jline3 {
   height: 100%;
   width: 10%;
-  background: pink;
-}
-.line2 {
-  height: 100%;
-  width: 10%;
-  background: skyblue;
-}
-.line3 {
-  height: 100%;
-  width: 10%;
-  background: lightgoldenrodyellow;
-}
-.flex-start {
-  justify-content: flex-start;
-}
-.flex-center {
-  justify-content: center;
-}
-.flex-end {
-  justify-content: flex-end;
-}
-.flex-space-btw {
-  justify-content: space-between;
-}
-.flex-space-around {
-  justify-content: space-around;
 }
 
-.main a p {
+.aline1 {
+  min-height: 20%;
+  width: 100%;
+}
+.aline2 {
+  min-height: 20%;
+  width: 100%;
+}
+.aline3 {
+  min-height: 20%;
+  width: 100%;
+}
+
+.main p {
   padding: 10px 20px;
   background: oklch(86.9% 0.022 252.894);
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
   transition: transform 0.2s ease;
+  /* shadow */
 }
-.main a p:hover {
+
+.main p:hover {
   transform: translateY(-3px);
 }
 .btns {
@@ -106,20 +107,6 @@ h2 {
   gap: 30px;
 }
 .two {
-  display: flex;
-  flex-direction: column;
-  /* background: pink; */
-}
-.credit {
-  /* position: absolute;
-  bottom: 0; */
-  color: oklch(70.2% 0.183 293.541);
-  display: flex;
-  justify-content: flex-end;
-}
-.two {
   margin-bottom: 20px;
   margin-right: 20px;
-  display: flex;
-  justify-content: flex-end;
 }

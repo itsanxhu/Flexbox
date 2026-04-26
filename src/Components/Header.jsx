@@ -1,7 +1,12 @@
-const Header = () => {
+const Header = ({ onReset }) => {
   return (
     <div>
-      <h1 className="header border-b border-gray-200">FLEXBOX</h1>
+      <div className="navbar">
+        <h1 className="header border-b border-gray-200 text-slate-700 ">
+          FLEXBOX
+        </h1>
+        <p onClick={onReset}>Reset</p>
+      </div>
     </div>
   );
 };
