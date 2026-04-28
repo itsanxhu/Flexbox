@@ -5,6 +5,9 @@
   --color-line1: #2956a3;
   --color-line2: #c9e3ff;
   --color-line3: #ee4b98;
+  /* --color-bg-box: hsl(26, 85%, 90%); */
+  --color-bg-box: hsl(27, 87%, 83%);
+  /* --color-bg-box: #F4A261; */
 }
 
 * {
@@ -55,10 +58,14 @@ h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
+.reset {
+  background: #eb2525;
+}
 
 .box-parent {
   padding: 10px;
   border: 1px solid black;
+  display: flex;
 }
 .box {
   height: calc(25rem / 1.3);
@@ -73,7 +80,24 @@ h2 {
 .jline2,
 .jline3 {
   height: 100%;
-  width: 10%;
+  min-width: 10%;
+}
+.wline1,
+.wline2,
+.wline3 {
+  height: 25%;
+  width: 40%;
+}
+.gline1,
+.gline3 {
+  height: 25%;
+  min-width: 20%;
+  max-width: 100%;
+}
+.gline2 {
+  height: 25%;
+  min-width: 20%;
+  max-width: 100%;
 }
 
 .aline1 {

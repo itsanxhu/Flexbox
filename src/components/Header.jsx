@@ -5,7 +5,9 @@ const Header = ({ onReset }) => {
         <h1 className="header border-b border-gray-200 text-slate-700 ">
           FLEXBOX
         </h1>
-        <p onClick={onReset}>Reset</p>
+        <p className="cursor-pointer" onClick={onReset}>
+          Reset
+        </p>
       </div>
     </div>
   );
