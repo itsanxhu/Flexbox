@@ -6,18 +6,19 @@ const Flexbox = () => {
     setjustify("justify-center");
     setalign("items-center");
   };
-  const [justify, setjustify] = useState("justify-center");
-  const [align, setalign] = useState("items-center");
   const [direction, setdirection] = useState("");
   const [wrap, setwrap] = useState("");
   const [grow, setgrow] = useState("");
+  const [justify, setjustify] = useState("");
+  const [align, setalign] = useState("items-start");
   return (
     <div className="fullpage bg-page">
       <div className="parent">
-        <div className="one">
-          {/* -------components--- */}
-          <Header onReset={handleReset} />
-          <div className="first">
+        {/* -------components--- */}
+        <Header onReset={handleReset} />
+        <div className="page-content   ">
+          {/* -------  direction  ----------- */}
+          <div className=" pb-10 border-b border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               flex-direction
             </h2>
@@ -41,7 +42,8 @@ const Flexbox = () => {
               </div>
             </div>
           </div>
-          <div className="first">
+          {/* -------  wrap  ----------- */}
+          <div className="pb-10 border-b border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               flex-wrap
             </h2>
@@ -62,7 +64,8 @@ const Flexbox = () => {
               </div>
             </div>
           </div>
-          <div className="first">
+          {/* -------  grow  ----------- */}
+          <div className="pb-10 border-b border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               flex-grow
             </h2>
@@ -80,7 +83,8 @@ const Flexbox = () => {
               </div>
             </div>
           </div>
-          <div className="first">
+          {/* -------  justify  ----------- */}
+          <div className="pb-10 border-b border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               justify-content
             </h2>
@@ -105,7 +109,8 @@ const Flexbox = () => {
               </div>
             </div>
           </div>
-          <div className="first">
+          {/* -------  align  ----------- */}
+          <div className="pb-10 border-b border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               align-items
             </h2>
@@ -127,6 +132,7 @@ const Flexbox = () => {
             </div>
           </div>
         </div>
+
         <div className="two flex flex-col justify-end">
           <div className="credit flex justify-end text-slate-700">Made by</div>
           <div className="credit flex justify-end text-slate-700">itsanxhu</div>
