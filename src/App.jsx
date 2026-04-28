@@ -16,9 +16,9 @@ const Flexbox = () => {
       <div className="parent">
         {/* -------components--- */}
         <Header onReset={handleReset} />
-        <div className="page-content   ">
+        <div className="page-content">
           {/* -------  direction  ----------- */}
-          <div className=" pb-10 border-b border-gray-200">
+          <div className="pb-10 border-b-2 border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               flex-direction
             </h2>
@@ -43,7 +43,7 @@ const Flexbox = () => {
             </div>
           </div>
           {/* -------  wrap  ----------- */}
-          <div className="pb-10 border-b border-gray-200">
+          <div className="pb-10 border-b-2 border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               flex-wrap
             </h2>
@@ -65,7 +65,7 @@ const Flexbox = () => {
             </div>
           </div>
           {/* -------  grow  ----------- */}
-          <div className="pb-10 border-b border-gray-200">
+          <div className="pb-10 border-b-2 border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               flex-grow
             </h2>
@@ -84,7 +84,7 @@ const Flexbox = () => {
             </div>
           </div>
           {/* -------  justify  ----------- */}
-          <div className="pb-10 border-b border-gray-200">
+          <div className="pb-10 border-b-2 border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               justify-content
             </h2>
@@ -97,7 +97,7 @@ const Flexbox = () => {
                 </div>
               </div>
               <div className="btns text-slate-800 ">
-                <p onClick={handleReset}>RESET</p>
+                {/* <p onClick={handleReset}>RESET</p> */}
                 <p onClick={() => setjustify("justify-start")}>flex-start</p>
                 <p onClick={() => setjustify("justify-end")}>flex-end</p>
                 <p onClick={() => setjustify("justify-center")}>flex-center</p>
@@ -110,7 +110,7 @@ const Flexbox = () => {
             </div>
           </div>
           {/* -------  align  ----------- */}
-          <div className="pb-10 border-b border-gray-200">
+          <div className="pb-10 border-b-2 border-gray-200">
             <h2 className=" flex justify-center items-center text-slate-700">
               align-items
             </h2>
